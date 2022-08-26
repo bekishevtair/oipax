@@ -1,0 +1,350 @@
+@media (min-width: $s-xs) {
+  body {
+    background: map-get($bc, 'white' );
+    // scroll-behavior: smooth;
+  }
+  .view {
+    padding-top: map-get($hh, 'mob');
+    .section {
+        opacity: 0;
+        transform: scaleX(.96);
+        transition: all ease-in-out .2s;
+        &[data-scroll='in'] {
+          transform: scaleX(1);
+          opacity: 1;
+          transition-delay: .2s;
+        }
+      &-trading {
+        margin-bottom: 100px;
+      }
+      &-links {
+        min-height: 80px;
+        background: map-get($bc, 'white' );
+        top: map-get($hh, 'mob');
+        z-index: 2;
+        .container {
+          display: flex;
+          align-items: center;
+          border-top: 1px solid lighten(map-get($bc, 'gray' ), 20%);
+          
+        }
+      }
+    }
+    &--homepage {
+      
+      .section {
+        &-1 {
+          margin: 30px 0 100px;
+        }
+        &-2 {
+          margin-bottom: 100px;
+        }
+        &-3 {
+          margin-bottom: 100px;
+        }
+        &-4 {
+          margin-bottom: 100px;
+        }
+        &-5 {
+          margin-bottom: 100px;
+        }
+        &-6 {
+          margin-bottom: 100px;
+        }
+        &-7 {
+          margin-bottom: 120px;
+        }
+        &-8 {
+        }
+      }
+    }
+    &--instruments {
+      .section {
+        &-1 {
+          margin: 30px 0 100px;
+        }
+        &-2 {
+        }
+        &-4 {
+          margin-bottom: 60px;
+        }
+        &-5 {
+          margin-bottom: 60px;
+        }
+        &-6 {
+          margin-bottom: 60px;
+        }
+        &-7 {
+          margin-bottom: 60px;
+          background: linear-gradient(to right, map-get($bc, 'dblue') 50%, transparent 50% );
+          .container-dblue {
+            border-radius: 0 20px 20px 0;
+          }
+        }
+        &-8 {
+          margin-bottom: 60px;
+        }
+        &-9 {
+          background: linear-gradient(to left, map-get($bc, 'dblue') 50%, transparent 50% );
+          margin-bottom: 60px;
+          .container-dblue {
+            border-radius: 20px 0px 0px 20px;
+          }
+        }
+      }
+      
+
+    }
+    &--platform {
+      .section {
+        &-1 {
+          margin: 30px 0 100px;
+        }
+        &-2 {
+          margin-bottom: 100px;
+        }
+        &-3 {
+          margin-bottom: 100px;
+          background: linear-gradient(to left, map-get($bc, 'dblue') 50%, transparent 50% );
+          .container-dblue {
+            border-radius: 20px 0px 0px 20px;
+          }
+        }
+        &-4 {
+          margin-bottom: 40px;
+        }
+        &-5 {
+          margin-bottom: 100px;
+        }
+      }
+    }
+    &--tools {
+      .section {
+        &-1 {
+          margin: 30px 0 100px;
+        }
+        &-2 {
+        }
+        &-3 {
+          margin-bottom: 100px;
+        }
+        &-4 {
+          margin-bottom: 100px;
+        }
+        &-5 {
+          margin-bottom: 100px;
+        }
+        &-6 {
+          margin-bottom: 120px;
+        }
+      }
+    }
+    &--about {
+      .section {
+        &-1 {
+          margin: 30px 0 0px 0;
+        }
+        &-2 {
+          margin-bottom: 100px;
+        }
+        &-3 {
+          margin-bottom: 100px;
+        }
+        &-4 {
+          margin-bottom: 100px;
+        }
+        &-5 {
+          margin-bottom: 100px;
+        }
+        &-6 {
+          margin-bottom: 120px;
+        }
+      }
+    }
+    .container-dblue {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background: map-get($bc, 'dblue' );
+      position: relative;
+      &::after, &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        background: inherit;
+        z-index: -1;
+      }
+    }
+  }
+}
+@media (min-width: $s-sm) {}
+@media (min-width: $s-md) {
+  .view {
+    .section {
+      &-links {
+        position: sticky;
+      }
+    }
+  }
+}
+@media (min-width: $s-lg) {
+  .view {
+    padding-top: map-get($hh, 'desk');
+    &--homepage {
+      .section {
+        &-1 {
+          margin: 30px 0px 100px 0;
+        }
+        &-2 {
+          margin-bottom: 150px;
+        }
+        &-3 {
+          margin-bottom: 150px;
+        }
+        &-4 {
+          margin-bottom: 150px;
+        }
+        &-5 {
+          margin: 0px 0 180px;
+        }
+        &-6 {
+          margin-bottom: 140px;
+          .container {
+            max-width: 1440px;
+          }
+        }
+        &-7 {
+          margin-bottom: 150px;
+          .container {
+            max-width: 1440px;
+          }
+        }
+      }
+    }
+    &--instruments {
+      .section {
+        .container-dblue {
+          border-radius: 0;
+        }
+        &-1 {
+          margin: 30px 0px 100px 0;
+        }
+        &-2 {
+          // margin-bottom: 150px;
+        }
+        &-3 {
+          margin-bottom: 100px;
+        }
+        &-4 {
+          margin-bottom: 226px;
+        }
+        &-5 {
+          margin-bottom: 120px;
+        }
+        &-6 {
+          margin-bottom: 100px;
+        }
+        &-7 {
+          margin-bottom: 140px;
+          .container-dblue {
+            &::after {
+              right: -60px;
+              border-radius: 0px 20px 20px 0;
+              width: 100%;
+            }
+          }
+        }
+        &-8 {
+          margin-bottom: 120px;
+        }
+        &-9 {
+          margin-bottom: 120px;
+          .container-dblue {
+            &::before {
+              left: -60px;
+              border-radius: 20px 0px 0px 20px;
+              width: 100%;
+            }
+          }
+        }
+        &-10 {
+          margin-bottom: 150px;
+        }
+        &-11 {
+          margin-bottom: 150px;
+        }
+      }
+      
+    }
+    &--platform {
+      .section {
+        &-1 {
+          margin: 30px 0 100px 0;
+        }
+        &-2 {
+          margin-bottom: 140px;
+        }
+        &-3 {
+          margin-bottom: 160px;
+          .container-dblue {
+            &::before {
+              left: -60px;
+              border-radius: 20px 0px 0px 20px;
+              width: 100%;
+            }
+          }
+        }
+        &-4 {
+          margin-bottom: 80px;
+        }
+        &-5 {
+          margin-bottom: 160px;
+        }
+      }
+      
+    }
+    &--tools {
+      .section {
+        &-1 {
+          margin:30px 0 100px 0;
+        }
+        &-2 {
+        }
+        &-3 {
+          margin-bottom: 100px;
+        }
+        &-4 {
+          margin-bottom: 160px;
+        }
+        &-5 {
+          margin-bottom: 160px;
+        }
+        &-6 {
+          margin-bottom: 160px;
+        }
+      }
+    }
+    &--about {
+      .section {
+        &-1 {
+          margin: 30px 0 0px 0;
+        }
+        &-2 {
+        }
+        &-3 {
+        }
+        &-4 {
+        }
+        &-5 {
+        }
+        &-6 {
+          margin-bottom: 160px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $s-xl) {
+
+}
+@media (min-width: $s-xxl) {}

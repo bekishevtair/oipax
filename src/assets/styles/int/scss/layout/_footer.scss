@@ -1,0 +1,30 @@
+@media (min-width: $s-xs) {
+  .footer {
+    padding: 100px 0 0 0;
+    background: lighten(map-get($bc, 'dgray' ), 44%);
+    &-row-hr {
+      border-bottom: 2px solid lighten(map-get($bc, 'gray' ), 20%);
+    }
+    ul {
+      li {
+        margin-bottom: 16px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    a { 
+      transition: .1s;
+      &:hover {
+        color: $b;
+      }
+
+    }
+
+  }
+}
+@media (min-width: $s-sm) {}
+@media (min-width: $s-md) {}
+@media (min-width: $s-lg) {}
+@media (min-width: $s-xl) {}
+@media (min-width: $s-xxl) {}

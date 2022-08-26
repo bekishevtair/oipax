@@ -1,0 +1,62 @@
+@include FONT();
+@include TEXTPROPS();
+
+@media (min-width: $s-xs) {
+  .txt, .tit,  p, a, b, i, li, ol, ul, h1, h2, h3, h4, h5, h6, span, label, input, textarea, button {
+    font-family: 'Avenir', sans-serif; // use as default font
+  }
+  .tit, .txt, .src {
+
+    &.lh {
+      &-1 { // or use (ex.) &-125 {}
+        line-height: 1.25;
+      }
+      &-2 { // or use (ex.) &-175 {}
+        line-height: 1.75;
+      }
+    }
+    &.tf {
+      &-inter { // or use &-1 {}
+        font-family: 'Inter', sans-serif;
+      }
+      &-ibmplexsans { // or use &-2 {}
+        font-family: 'IBMPlexSans', sans-serif;
+      }
+    }
+  }
+  .tit {
+    line-height: 1.2em;
+  }
+  .txt {
+    line-height: 1.65em;
+  }
+  .list {
+    &-item {
+      min-height: 80px;
+      padding: 0 0 0 40px;
+      position: relative;
+      display: inline-flex;
+      transition: .2s;
+      &::before {
+        position: absolute;
+        left: 0;
+        content: '';
+        display: block;
+        height: 24px;
+        flex: 0 0 24px;
+        width: 24px;
+        background: 
+          url('../../../../public/img/icons/ico-check-dblue.svg') center no-repeat,
+          map-get($bc, 'laqua' );
+        border-radius: 4px;
+        margin: 0 16px 0 0;
+      }
+
+    }
+  }
+}
+@media (min-width: $s-sm) {}
+@media (min-width: $s-md) {}
+@media (min-width: $s-lg) {}
+@media (min-width: $s-xl) {}
+@media (min-width: $s-xxl) {}

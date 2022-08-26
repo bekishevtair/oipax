@@ -1,0 +1,77 @@
+@mixin FONT () {
+  @each $font in $fonts {
+    $min: map-get(map-get($font-weight, 'min'), $font);
+    $max: map-get(map-get($font-weight, 'max'), $font);
+    @for $i from $min through $max {
+      $wght: $i * 100;
+      @font-face {
+        font-family: '#{$font}';
+        src: url('../../../../public/fonts/#{$font}/#{$font}-#{$wght}.ttf');
+        font-weight: $wght;
+        font-style: normal;
+      }
+    }
+  }
+}
+@mixin TEXTALIGNS ($media: 'xs') {
+  $aligns: center, left, right;
+  @each $align in $aligns {
+    $cls: '.ta-#{$media}-#{$align}';
+    @if ($media == 'xs') {
+      $cls: '.ta-#{$align}'
+    }
+    #{$cls} {
+      text-align: $align;
+    }
+  }
+}
+@mixin TEXTSIZES ($media: 'xs') {
+  $i: map-get($font-size, 'min');
+  $max: map-get($font-size, 'max');
+  @while $i <= $max {
+    $cls: '.ts-#{$media}-#{$i}';
+    @if ($media == 'xs') {
+      $cls: '.ts-#{$i}';
+    }
+    #{$cls} {
+      font-size: #{$i}px;
+    }
+    $i: $i + 2;
+  }
+}
+@mixin TEXTWEIGHTS ($media: 'xs') {
+  $min: 1;
+  $max: 9;
+  @while $min <= $max {
+    $wght: $min * 100;
+    $cls: '.tw-#{$media}-#{$wght}';
+    @if ($media == 'xs') {
+      $cls: '.tw-#{$wght}';
+    }
+    #{$cls} {
+      font-weight: #{$wght};
+    }
+    $min: $min + 1;
+  }
+}
+@mixin TEXTCOLORS ($media: 'xs') {
+  @each $color in $text-colors {
+    $cls: '.tc-#{$media}-#{$color}';
+    @if ($media == 'xs') {
+      $cls: '.tc-#{$color}'
+    }
+    #{$cls} {
+      color: map-get($bc, $color);
+    }
+  }
+}
+@mixin TEXTPROPS () {
+  @each $media in $res {
+    @media (min-width: map-get($gbp, $media)) {
+      @include TEXTALIGNS($media);
+      @include TEXTSIZES($media);
+      @include TEXTWEIGHTS($media);
+      @include TEXTCOLORS($media);
+    }
+  }
+}

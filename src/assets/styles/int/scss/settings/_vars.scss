@@ -1,0 +1,76 @@
+// Media sizes
+$res: 'xs', 'sm', 'md', 'lg', 'xl', 'xxl';
+
+$gbp: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$s-xs: map-get($gbp, xs);
+$s-sm: map-get($gbp, sm);
+$s-md: map-get($gbp, md);
+$s-lg: map-get($gbp, lg);
+$s-xl: map-get($gbp, xl);
+$s-xxl: map-get($gbp, xxl);
+
+// Project paths
+$img: '../../../../public/img';
+
+// Black / White / Transparent
+$b: #000000 !default;
+$w: #FFFFFF !default;
+$t: rgba(255,255,255,0);
+
+// Default colors
+$dc: (
+  'error':   #d9181c,
+  'warning': #F0AD4E,
+  'success': #22BB33,
+  'hint':    #AAAAAA,
+);
+
+// Brand colors
+$bc: (
+  'white': #F8F8F8,
+  'light': #e5f9f9,
+  'black': #363636,
+  'dgray': #6B7272,
+  'gray': #909A9A,
+  'red':   #ef4209,
+  'yellow': #f5be43,
+  'green': #07f070,
+  'dgreen': #20635c,
+  'aqua': #3a9689,
+  'laqua': #78cdc5,
+  'dblue':  #202E35,
+  'blue':  #1170ff,
+  // for gradient
+  'aqua1': #3F8D7F,
+  'aqua2': #82C9C0,
+
+);
+
+// Font options
+$fonts: 'Avenir', 'Inter';
+$font-weight: (
+  min: (
+    Avenir: 1,
+    Inter: 1
+  ),
+  max: (
+    Avenir: 9,
+    Inter: 9
+  )
+);
+$font-size: (min: 10, max: 70);
+$text-colors: 'white', 'light', 'black', 'red', 'green', 'dgreen', 'aqua', 'laqua', 'gray', 'dgray', 'blue', 'dblue';
+
+// Button options
+$btn-width: (min: 80, max: 320);
+
+// Header options
+$hh: (mob: 100px, desk: 100px);

@@ -1,0 +1,187 @@
+@media (min-width: $s-xs) {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .box {
+    &-bg {
+      min-height: 240px;
+      &-right-side-rounded {
+        border-radius: 0 20px 20px 0;
+      }
+      &-left-side-rounded {
+        border-radius: 20px 0px 0px 20px;
+      }
+      &-arrows {
+        background: 
+        url('../../../../public/img/ui/img-hp-bg-arrows.png'),
+        url('../../../../public/img/ui/img-hp-1man.png') 50% 100% no-repeat,
+        radial-gradient(circle, map-get($bc, 'aqua2' ), map-get($bc, 'aqua1' ));
+        &-instruments {
+          min-height: 240px;
+          background:
+            url('../../../../public/img/ui/img-instruments-3barrels.png') 20% 0 no-repeat,
+            url('../../../../public/img/ui/img-instruments-bg-arrows-coins.png') center no-repeat;
+        }
+      }
+      &-stars {
+        border-radius: 20px;
+        position: relative;
+        padding: 0 0 40px ;
+        min-height: 570px;
+        background: 
+          url('../../../../public/img/ui/img-bg-stars.png') no-repeat,
+          url('../../../../public/img/ui/img-hp-bg-orange-lines.png') 10% 100% / 120% no-repeat,
+          map-get($bc, 'dblue' ),
+          ;
+      }
+      &-green-gradient {
+        min-height: 256px;
+        background: 
+          url('../../../../public/img/ui/img-bg-green-gradient.png') 0% 0% / 100% 100%  no-repeat;
+      }
+      &-4ppl {
+        background: 
+          url('../../../../public/img/ui/img-bg-4ppl.png') 92% 0% no-repeat,
+          url('../../../../public/img/ui/img-instr-bg-green.png') 92% 0%  no-repeat,
+      }
+      &-phone {
+        background: 
+          url('../../../../public/img/ui/img-hp-2ppl.png') 1% 0% no-repeat,
+          url('../../../../public/img/ui/img-hp-bg-phone.png') no-repeat;
+          &-platform {
+            min-height: 240px;
+            background: 
+              url('../../../../public/img/ui/img-platform-phone.png') 0% 0 / auto 100% no-repeat;
+
+          }
+      }
+      &-yellow-green {
+        background: 
+          url('../../../../public/img/ui/img-instruments-yellow-green.png') 100% 50% /  auto 100% no-repeat;
+      }
+      &-1man-tools {
+        position: relative;
+        background: 
+          url('../../../../public/img/ui/img-tools-1man.png') 60% -10% /  auto 120% no-repeat,
+          url('../../../../public/img/ui/img-tools-bg-green.png') no-repeat;
+          
+        }
+    }
+    &-border {
+      position: relative;
+      min-height: 272px;
+      margin-bottom: 20px;
+      padding: 30px;
+      border-radius: 20px;
+      border: 2px solid lighten(map-get($bc, 'gray' ), 20%);
+      transition: all ease-in-out .1s;
+     
+      &:hover {
+        background: map-get($bc, 'aqua' );
+        border: 2px solid map-get($bc, 'aqua' );
+        .txt, .tit {
+          color: $w !important;
+          transition: all ease-in-out .1s;
+        }
+        a {
+          &::after {
+            background: $w;
+            -webkit-mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
+            mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
+            // transition: .2s;
+          }
+          &:hover {
+            transform: scale(1.05);
+            &::after {
+              // transform: translateX(4px);
+            }
+          }
+        }
+      }
+      a {
+        padding: 0 40px 0 0;
+        position: relative;
+        text-decoration: none;
+        font-family: 'Avenir', sans-serif; // use as default font
+        font-weight: 500;
+        transition: .2s;
+    
+        &::after {
+          position: absolute;
+          right: 0;
+          top: 3px;
+          content: '';
+          display: block;
+          height: 24px;
+          width: 24px;
+          background: 
+            url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
+         
+        }
+      }
+      &-2 {
+        min-height: 182px;
+        margin-bottom: 20px;
+        padding: 30px;
+        border-radius: 20px;
+        border: 2px solid lighten(map-get($bc, 'gray' ), 20%);
+      }
+    }
+  }
+}
+@media (min-width: $s-sm) {
+  .box {
+    &-bg {
+      border-radius: 20px;
+    }
+  }
+}
+@media (min-width: $s-md) {
+  .box {
+    &-bg {
+      &-arrows {
+        background: 
+          url('../../../../public/img/ui/img-hp-bg-arrows.png'),
+          url('../../../../public/img/ui/img-hp-1man.png') 100% 100% no-repeat,
+          url('../../../../public/img/ui/img-hp-3barrels.png') 5% 0% no-repeat,
+          radial-gradient(circle, map-get($bc, 'aqua2' ), map-get($bc, 'aqua1' ));
+        &-instruments {
+          background:
+            url('../../../../public/img/ui/img-instruments-3barrels.png') 50% 0 no-repeat,
+            url('../../../../public/img/ui/img-instruments-bg-arrows-coins.png') center no-repeat;
+        }
+      }
+      &-phone {
+        background: 
+          url('../../../../public/img/ui/img-hp-2ppl.png') 1% 0% no-repeat,
+          url('../../../../public/img/ui/img-hp-bg-phone.png') no-repeat;
+          &-platform {
+   
+          }
+      }
+    
+      &-green-gradient {
+        background: 
+          url('../../../../public/img/ui/img-bg-green-gradient.png') 0% 0% / 100%  no-repeat;
+      }
+      &-4ppl {
+        background: 
+          url('../../../../public/img/ui/img-bg-4ppl.png') 50% 0% no-repeat,
+          url('../../../../public/img/ui/img-instr-bg-green.png') center no-repeat,
+      }
+      &-yellow-green {
+      }
+    }
+  }
+}
+@media (min-width: $s-lg) {
+}
+@media (min-width: $s-xl) {
+  .view {
+    padding-top: map-get($hh, 'desk');
+  }
+}
+@media (min-width: $s-xxl) {}
+@include BTNSCALE($btn-scales-options);
+@include BTNWIDTH(80, 320);

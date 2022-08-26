@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Template">
+  <meta name="msapplication-TileImage" content="../../public/img/favicon/msapplication-icon-144x144.png">
+  <meta meta-id="1" property="og:title" content="Template">
+  <meta meta-id="1" property="og:description" content="">
+  <meta meta-id="1" name="description" content="">
+  <meta meta-id="1" name="keywords" content="">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../public/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../public/img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../../public/img/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="../../public/img/icons/safari-pinned-tab.svg" color="#CCCCCC">
+
+  <link rel="stylesheet" href="../../assets/styles/ext/bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../../assets/styles/int/css/styles.css">
+
+  <script src="../../assets/scripts/ext/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../../assets/scripts/int/script.js"></script>
+</head>
+</head>
+<body>
+  <div style="display: none !important;">
+    <input id="js-path" type="hidden" name="path" value="../../comp/en" disabled />
+  </div>
+  <header class="js-import" data-import="header"></header>
+  <nav class="js-import" data-import="nav"></nav>
+  <main class="view view--platform">
+
+    <section class="section section-1" id="sec-01">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <div class="wrapper d-flex flex-column">
+              <h4 class="txt ts-22 ts-lg-24 tc-aqua ta-left tw-500 mb-3">
+                Do not hesitate to reach out to us
+              </h4>
+              <h1 class="tit ts-44 ts-lg-64 tc-dblue ta-left tw-800 mb-4">
+                Contact OIPAX
+              </h1>
+              <p class="txt ts-18 ts-lg-18 tc-gray ta-left tw-500 mb-5">
+                Our multilingual support team will be happy to answer your questions and direct you to the right department to resolve any issues.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 offset-lg-1">
+            <div class="wrapper">
+              <form id="form" class="form" name="form" action="../../public/email/send_mail.php" method="POST">
+                <div class="row mb-4">
+                  <div class="col-12">
+                    <div class="input">
+                      <div class="input__item input__item--mail">
+                        <input 
+                        class="input__item--field           input__item--field-mail" 
+                        name="email" 
+                        type="email" 
+                        placeholder="Email" 
+                        data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                        />
+                        <div class="input__item--message">
+                          <span class="input__item--error">Ex.: example@mail.com</span>
+                          <span class="input__item--warning">Warning</span>
+                          <span class="input__item--hint">Hint</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-12 mb-3 mb-md-0 pe-md-2">
+                    <div class="input">
+                      <div class="input__item input__item--subject">
+                        <input 
+                        class="input__item--field js-text" 
+                        name="subject" 
+                        type="text" 
+                        placeholder="Subject" 
+                        data-reg="^[а-яА-ЯёЁa-zA-Z0-9]+$"
+                        required
+                        />
+                        <div class="input__item--message">
+                          <span class="input__item--error">This field is required</span>
+                          <span class="input__item--warning">Warning</span>
+                          <span class="input__item--hint">Hint</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-12 mb-3 mb-md-0 pe-md-2">
+                    <div class="input">
+                      <div class="input__item input__item--textarea">
+                        <textarea class="input__item--field" name="message" id="message" placeholder="Message" type="text" required="required" data-reg="^[а-яА-ЯёЁa-zA-Z0-9]+$"
+                        ></textarea>
+                        <div class="input__item--message">
+                          <span class="input__item--error">This field is required</span>
+                          <span class="input__item--warning">Warning</span>
+                          <span class="input__item--hint">Hint</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="input input--checkbox">
+                    <div class="input__item">
+                      <input id="checkbox" type="checkbox" checked>
+                      <label class="input__item--label mb-3" for="checkbox">
+                        <p class="txt tc-gray">
+                          I agree to the 
+                          <a href="../terms-and-conditions" target="_blank" class="txt tc-gray tw-800" target="_blank">
+                            Terms & Conditions.
+                          </a>
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <button id="button" name="button" type="submit" class="btn btn-aqua btn-w-200 btn-s4">
+                      <span>
+                        Send message
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div style="display: none !important; height: 0;">
+                  <input class="js-tp-link" type="hidden" name="thankYouPage" value="" data-lang="">
+                  <input class="js-crm-link" type="hidden" name="brandName" value="template.com">
+                  <input class="js-url-link" type="hidden" name="landingPageUrl" value="">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="js-import" data-import="section-trading">
+    </section>
+    <section class="section-arrow-up pb-5" >
+      <div class="container">
+        <div class="wrapper d-flex flex-row justify-content-end">
+          <a href="#sec-01" class="btn btn-arrow-up js-anchor-link">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-links" style="display: none;"></section>
+
+  </main>
+  <footer class="js-import" data-import="footer"></footer>
+
+  <script src="../../assets/scripts/int/scrolltotop.js"></script>
+  <script src="../../assets/scripts/int/form-contact.js"></script>
+
+</body>
+</html>

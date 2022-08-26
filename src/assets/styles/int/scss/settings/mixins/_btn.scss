@@ -1,0 +1,42 @@
+@mixin BTNSCALE ($options) {
+  @each $media in $res {
+    @media (min-width: map-get($gbp, $media)) {
+      @each $key, $val in $options {
+        $ts: map-get($val, 'ts');
+        $pd: map-get($val, 'pd');
+        $cls: '.btn-#{$media}-#{$key}';
+        @if ($media == 'xs') {
+          $cls: '.btn-#{$key}';
+        }
+        #{$cls} {
+          font-size: $ts;
+          padding: $pd;
+        }
+      }
+    }
+  }
+}
+@mixin BTNWIDTH ($min, $max) {
+  @each $media in $res {
+    @media (min-width: map-get($gbp, $media)) {
+      $i: $min;
+      @while $i <= $max {
+        $cls: '.btn-w-#{$media}-#{$i}';
+        @if ($media == 'xs') {
+          $cls: '.btn-w-#{$i}';
+        }
+        #{$cls} {
+          width: #{$i}px;
+        }
+        $i: $i + 20;
+      }
+      $cls: '.btn-w-#{$media}-fc';
+      @if ($media == 'xs') {
+        $cls: '.btn-w-fc';
+      }
+      #{$cls} {
+        width: fit-content;
+      }
+    }
+  }
+}

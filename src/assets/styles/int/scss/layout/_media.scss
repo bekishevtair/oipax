@@ -1,0 +1,85 @@
+@media (min-width: $s-xs) {
+  .img, .ico {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .img {
+    &-hp {
+      &-yellow-green {
+        position: relative;
+        border-radius: 20px;
+        max-height: 98%;
+        width: 100%;
+        background: url('../../../../public/img/ui/img-hp-yellow-green.png') 50% 0% / auto 100%  no-repeat;
+        img {
+          position: absolute;
+          max-width: 280px;
+          margin-right: -60%;
+          right: 50%;
+        }
+        
+      }
+      &-yellow-2ppl {
+        max-width: 568px;
+      }
+      &-green-1man {
+        position: relative;
+        max-width: 680px;
+        // &::after {
+        //   position: absolute;
+        //   content: '';
+        //   top: 0;
+        //   right: 0px;
+        //   margin-right: -200px;
+        //   width: 200px;
+        //   height: 200px;
+        //   background: url('../../../../public/img/ui/img-hp-green-1man-box.png') no-repeat;
+        // }
+        &-box {
+          position: absolute;
+          top: -40px;
+          margin-right: -70px;
+          right: 0px;
+          max-width: 208px;
+        }
+      }
+      &-award {
+        max-width: 266px;
+        min-height: 256px;
+        background: radial-gradient(70% 70% at 50% 50%, #D9865C -20%, #14151900 70%);
+        img {
+          padding: 50px 0 0 0;
+          bottom: 0;
+        }
+      }
+    }
+    &-platform {
+      &-1woman {
+        max-width: 648px;
+      }
+      &-2phones {
+        max-width: 448px;
+      }
+    }
+    &-tools {
+      &-1coin {
+        position: absolute;
+        max-width: 140px;
+        bottom: -60px;
+        left: 9%;
+      }
+    }
+    &-footer {
+      &-logo {
+        max-width: 172px;
+      }
+    }
+  }
+}
+@media (min-width: $s-sm) {}
+@media (min-width: $s-md) {}
+@media (min-width: $s-lg) {}
+@media (min-width: $s-xl) {}
+@media (min-width: $s-xxl) {}
