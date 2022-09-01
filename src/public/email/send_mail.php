@@ -25,7 +25,7 @@
 	$body = str_replace('%phone%', $phone, $body);
 	$body = str_replace('%message%', $message, $body);
 
-    $mail->addAddress("bekishevtair@gmail.com");
+    $mail->addAddress("support@oipax.com");
 	$mail->setFrom($email);
     $mail->Subject = ($subject);
     $mail->MsgHTML($body);
