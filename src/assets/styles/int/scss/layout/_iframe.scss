@@ -2,5 +2,10 @@
   .iframe {
     min-height: 650px;
     overflow-y:visible;
+    
   }
+  .iframe html {
+    background: #F8F8F8;
+  }
+
 }

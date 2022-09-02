@@ -1535,6 +1535,7 @@ table {
   }
   .header__routes-item--switcher {
     display: block;
+    margin-right: 12px;
   }
   .header__link, .header__exp-head {
     height: 100px;
@@ -3075,6 +3076,9 @@ table {
   .iframe {
     min-height: 650px;
     overflow-y: visible;
+  }
+  .iframe html {
+    background: #F8F8F8;
   }
 }
 @media (min-width: 0) {

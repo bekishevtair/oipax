@@ -1,0 +1,68 @@
+.iframe {
+  min-height: 650px;
+  overflow-y:visible;
+  
+}
+.iframe html {
+  background: #F8F8F8;
+}
+html {
+  background: #F8F8F8;
+
+}
+table, .dataTables_paginate, .dataTables_info, .dataTables_length {
+  font-family: "Inter";
+  src: url('../../../../public/fonts/Inter/Inter-400.ttf');
+  font-weight: 400;
+  font-style: normal;
+  color: #6B7272 !important;
+}
+th {
+  background-color: #3a9689;
+  border: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+th:first-child {
+  border-radius: 18px 0 0 0;
+}
+th:last-child {
+  border-radius:0 18px 0 0;
+}
+tr {
+  background: rgb(243, 243, 243);
+}
+input[type='search'], select[aria-controls='wp-table'] {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 6px;
+  padding: 6px;
+}
+input:focus, select:focus {
+  outline: 2px solid #3a9689;
+}
+.dataTables_wrapper{
+  background: #f8f8f8 !important;
+}
+.paginate_button {
+  color: #6B7272;
+  border-radius: 40px !important;
+  border: none !important;
+  transition: all ease-in-out .1s;
+  outline: none !important;
+}
+.paginate_button:hover {
+  color: #fff;
+  background: #88b9b2 !important;
+}
+.paginate_button.current {
+  color: #ffffff !important;
+  background: #88b9b2 !important;
+}
+.paginate_button.current:hover {
+  color: #fff;
+  background: #5fa49b !important;
+}
+
