@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 .iframe {
   min-height: 650px;
   overflow-y:visible;
@@ -10,11 +14,10 @@ html {
   background: #F8F8F8;
 
 }
+table {
+  margin-bottom: 24px;
+}
 table, .dataTables_paginate, .dataTables_info, .dataTables_length {
-  font-family: "Inter";
-  src: url('../../../../public/fonts/Inter/Inter-400.ttf');
-  font-weight: 400;
-  font-style: normal;
   color: #6B7272 !important;
 }
 th {
@@ -48,21 +51,21 @@ input:focus, select:focus {
 }
 .paginate_button {
   color: #6B7272;
-  border-radius: 40px !important;
+  border-radius: 50px !important;
   border: none !important;
   transition: all ease-in-out .1s;
   outline: none !important;
 }
 .paginate_button:hover {
-  color: #fff;
+  color: #f8f8f8;
   background: #88b9b2 !important;
 }
 .paginate_button.current {
-  color: #ffffff !important;
-  background: #88b9b2 !important;
+  color: #f8f8f8;
+  background: #3a9689 !important;
 }
 .paginate_button.current:hover {
-  color: #fff;
+  color: #f8f8f8;
   background: #5fa49b !important;
 }
 
