@@ -32,60 +32,6 @@ table {
 }
 
 @font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-100.ttf");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-200.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-300.ttf");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-400.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-500.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-600.ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-700.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-800.ttf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url("../../../../public/fonts/Avenir/Avenir-900.ttf");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
   font-family: "Inter";
   src: url("../../../../public/fonts/Inter/Inter-100.ttf");
   font-weight: 100;
@@ -136,6 +82,60 @@ table {
 @font-face {
   font-family: "Inter";
   src: url("../../../../public/fonts/Inter/Inter-900.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-100.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-200.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-300.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-500.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-600.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-700.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-800.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../../../public/fonts/Avenir/Avenir-900.ttf");
   font-weight: 900;
   font-style: normal;
 }
@@ -1145,6 +1145,9 @@ table {
   .txt, .tit, p, a, b, i, li, ol, ul, h1, h2, h3, h4, h5, h6, span, label, input, textarea, button {
     font-family: "Avenir", sans-serif;
   }
+  html[lang=vi] body .tit, html[lang=vi] body .txt, html[lang=vi] body .src {
+    font-family: "Inter", sans-serif;
+  }
   .tit.lh-1, .txt.lh-1, .src.lh-1 {
     line-height: 1.25;
   }
@@ -1291,6 +1294,9 @@ table {
     text-decoration: none;
     border-radius: 5px;
     color: #909A9A;
+  }
+  .header__exp-link:first-child.js-switcher {
+    color: #3a9689;
   }
   .header__exp-link:hover {
     color: #3a9689;

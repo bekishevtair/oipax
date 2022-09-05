@@ -129,6 +129,9 @@
         text-decoration: none;
         border-radius: 5px;
         color: map-get($bc, 'gray' );
+        &:first-child.js-switcher {
+          color: map-get($bc, 'aqua' );
+        }
         
         &:hover {
           color: map-get($bc, 'aqua' );

@@ -5,6 +5,13 @@
   .txt, .tit,  p, a, b, i, li, ol, ul, h1, h2, h3, h4, h5, h6, span, label, input, textarea, button {
     font-family: 'Avenir', sans-serif; // use as default font
   }
+  html[lang="vi"] {
+    body {
+      .tit, .txt, .src {
+        font-family: 'Inter', sans-serif; // use as default font
+      }
+    }
+  }
   .tit, .txt, .src {
 
     &.lh {

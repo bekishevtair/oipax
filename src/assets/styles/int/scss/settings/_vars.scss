@@ -55,15 +55,15 @@ $bc: (
 );
 
 // Font options
-$fonts: 'Avenir', 'Inter';
+$fonts: 'Inter', 'Avenir';
 $font-weight: (
   min: (
+    Inter: 1,
     Avenir: 1,
-    Inter: 1
   ),
   max: (
+    Inter: 9,
     Avenir: 9,
-    Inter: 9
   )
 );
 $font-size: (min: 10, max: 70);

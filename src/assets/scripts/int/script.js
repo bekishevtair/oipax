@@ -143,8 +143,6 @@ function validateFields () { // Validate fields
   return !validate.includes(false)
 }
 
-
-
 function isLength (val) { // Check value length
   return val.length > 1
 }

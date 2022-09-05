@@ -14,9 +14,10 @@ html {
   background: #F8F8F8;
 
 }
-table {
-  margin-bottom: 24px;
+table.dataTable.no-footer {
+  border-bottom: none;
 }
+
 table, .dataTables_paginate, .dataTables_info, .dataTables_length {
   color: #6B7272 !important;
 }
@@ -33,6 +34,7 @@ th:first-child {
 th:last-child {
   border-radius:0 18px 0 0;
 }
+
 tr {
   background: rgb(243, 243, 243);
 }
@@ -50,22 +52,24 @@ input:focus, select:focus {
   background: #f8f8f8 !important;
 }
 .paginate_button {
+  min-width: 2.5em !important;
+  min-height: 2.5em !important;
   color: #6B7272;
   border-radius: 50px !important;
   border: none !important;
   transition: all ease-in-out .1s;
   outline: none !important;
 }
+.paginate_button:active {
+  box-shadow: none;
+}
 .paginate_button:hover {
-  color: #f8f8f8;
   background: #88b9b2 !important;
 }
 .paginate_button.current {
-  color: #f8f8f8;
-  background: #3a9689 !important;
+  background: #5fa49b !important;
 }
 .paginate_button.current:hover {
-  color: #f8f8f8;
-  background: #5fa49b !important;
+  background: #88b9b2 !important;
 }
 
