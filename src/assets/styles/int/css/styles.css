@@ -2678,6 +2678,10 @@ table {
     border-radius: 20px;
     border: 2px solid #c5cbcb;
   }
+  .box-notification {
+    padding: 20px 0;
+    background: #d9181c;
+  }
 }
 @media (min-width: 576px) {
   .box-bg {
