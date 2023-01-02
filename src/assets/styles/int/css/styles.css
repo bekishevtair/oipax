@@ -1167,7 +1167,7 @@ table {
     line-height: 1.65em;
   }
   .list-item {
-    min-height: 80px;
+    min-height: 50px;
     padding: 0 0 0 40px;
     position: relative;
     display: inline-flex;
@@ -1184,6 +1184,10 @@ table {
     background: url("../../../../public/img/icons/ico-check-dblue.svg") center no-repeat, #78cdc5;
     border-radius: 4px;
     margin: 0 16px 0 0;
+    transition: 0.2s;
+  }
+  .box-border:hover .list-item::before {
+    background: url("../../../../public/img/icons/ico-check-dblue.svg") center no-repeat, #e5f9f9;
   }
 }
 @media (min-width: 0) {
@@ -1859,6 +1863,9 @@ table {
     pointer-events: auto;
     opacity: 1;
   }
+  .btn-store:last-child {
+    display: none;
+  }
 }
 @media (min-width: 0) {
   .btn-s1 {
@@ -2509,13 +2516,13 @@ table {
   .img-hp-yellow-green {
     position: relative;
     border-radius: 20px;
-    max-height: 98%;
+    max-height: 100%;
     width: 100%;
-    background: url("../../../../public/img/ui/img-hp-yellow-green.png") 50% 0%/auto 100% no-repeat;
+    background: url("../../../../public/img/ui/img-hp-yellow-green.png") 50% 50%/105% auto no-repeat;
   }
   .img-hp-yellow-green img {
     position: absolute;
-    max-width: 280px;
+    max-width: 200px;
     margin-right: -60%;
     right: 50%;
   }
@@ -2628,6 +2635,10 @@ table {
     position: relative;
     background: url("../../../../public/img/ui/img-tools-1man.png") 60% -10%/auto 120% no-repeat, url("../../../../public/img/ui/img-tools-bg-green.png") no-repeat;
   }
+  .box-bg-1woman-acc {
+    position: relative;
+    background: url("../../../../../public/img/ui/img-accounts-s1.png") 15% 50%/auto 105% no-repeat;
+  }
   .box-border {
     position: relative;
     min-height: 272px;
@@ -2635,7 +2646,10 @@ table {
     padding: 30px;
     border-radius: 20px;
     border: 2px solid #c5cbcb;
-    transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.2s;
+  }
+  .box-border:last-child {
+    margin-bottom: 0px;
   }
   .box-border:hover {
     background: #3a9689;

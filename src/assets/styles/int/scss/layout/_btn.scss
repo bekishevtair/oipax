@@ -130,6 +130,11 @@
         opacity: 1;
       }
     }
+    &-store {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 }
 $btn-scales-options: (

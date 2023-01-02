@@ -39,7 +39,7 @@
   }
   .list {
     &-item {
-      min-height: 80px;
+      min-height: 50px;
       padding: 0 0 0 40px;
       position: relative;
       display: inline-flex;
@@ -57,8 +57,20 @@
           map-get($bc, 'laqua' );
         border-radius: 4px;
         margin: 0 16px 0 0;
+        transition: .2s;
+
       }
 
+    }
+  }
+  .box-border:hover {
+    .list-item {
+      &::before {
+        background: 
+          url('../../../../public/img/icons/ico-check-dblue.svg') center no-repeat,
+          map-get($bc, 'light' );
+
+      }
     }
   }
 }

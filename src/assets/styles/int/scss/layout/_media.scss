@@ -10,12 +10,12 @@
       &-yellow-green {
         position: relative;
         border-radius: 20px;
-        max-height: 98%;
+        max-height: 100%;
         width: 100%;
-        background: url('../../../../public/img/ui/img-hp-yellow-green.png') 50% 0% / auto 100%  no-repeat;
+        background: url('../../../../public/img/ui/img-hp-yellow-green.png') 50% 50% / 105% auto  no-repeat;
         img {
           position: absolute;
-          max-width: 280px;
+          max-width: 200px;
           margin-right: -60%;
           right: 50%;
         }

@@ -67,6 +67,11 @@
           url('../../../../public/img/ui/img-tools-bg-green.png') no-repeat;
           
         }
+      &-1woman-acc {
+        position: relative;
+        background: 
+          url('../../../../../public/img/ui/img-accounts-s1.png') 15% 50% /  auto 105% no-repeat,
+        }
     }
     &-border {
       position: relative;
@@ -75,7 +80,10 @@
       padding: 30px;
       border-radius: 20px;
       border: 2px solid lighten(map-get($bc, 'gray' ), 20%);
-      transition: all ease-in-out .1s;
+      transition: all ease-in-out .2s;
+      &:last-child {
+        margin-bottom: 0px;
+      }
      
       &:hover {
         background: map-get($bc, 'aqua' );
