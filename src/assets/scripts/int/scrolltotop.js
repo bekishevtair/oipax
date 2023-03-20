@@ -10,11 +10,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
-
-
 // SCROLL TO SECTION ON OTHER PAGE header__exp-link
-
 $(function() {
   $('.link .header__exp-link .nav__exp-link').on('click tap', function(){
     $('html, body').animate({

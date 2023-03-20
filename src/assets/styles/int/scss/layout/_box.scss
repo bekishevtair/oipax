@@ -70,10 +70,10 @@
       &-1woman-acc {
         position: relative;
         background: 
-          url('../../../../../public/img/ui/img-accounts-s1.png') 15% 50% /  auto 105% no-repeat,
+          url('../../../../public/img/ui/img-accounts-s1.png') 15% 50% /  auto 105% no-repeat,
         }
     }
-    &-border {
+    &-border, &-border-2 {
       position: relative;
       min-height: 272px;
       margin-bottom: 20px;
@@ -86,19 +86,19 @@
       }
      
       &:hover {
-        background: map-get($bc, 'aqua' );
-        border: 2px solid map-get($bc, 'aqua' );
-        .txt, .tit {
-          color: $w !important;
-          transition: all ease-in-out .1s;
-        }
+        // background: map-get($bc, 'aqua' );
+        // border: 2px solid map-get($bc, 'aqua' );
+        // .txt, .tit {
+        //   color: $w !important;
+        //   transition: all ease-in-out .1s;
+        // }
         a {
-          &::after {
-            background: $w;
-            -webkit-mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
-            mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
-            // transition: .2s;
-          }
+          // &::after {
+          //   background: $w;
+          //   -webkit-mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
+          //   mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
+          //   // transition: .2s;
+          // }
           &:hover {
             transform: scale(1.05);
             &::after {
@@ -134,7 +134,16 @@
         padding: 30px;
         border-radius: 20px;
         border: 2px solid lighten(map-get($bc, 'gray' ), 20%);
+        transition: all ease-in-out .2s;
+        &:hover {
+          border: 2px solid map-get($bc, 'laqua' );
+          box-shadow: 0px 0px 0px 2px map-get($bc, 'laqua' );
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
       }
+     
     }
     &-notification {
       padding: 20px 0;

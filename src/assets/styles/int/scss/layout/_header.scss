@@ -197,7 +197,6 @@
 
       &-item {
         width: 100%;
-        margin-bottom: 5px;
         padding: 12px 10px;
         text-decoration: none;
         color: map-get($bc, 'gray' );
@@ -214,7 +213,6 @@
       width: 100%;
       background: inherit;
       position: relative;
-      padding-left: 34px;
     
       &::after,
       &::before {
@@ -228,11 +226,11 @@
       }
       &::before {
         transform: rotate(40deg);
-        left: 10px;
+        right: 16px;
       }
       &::after {
         transform: rotate(-40deg);
-        left: 16px;
+        right: 10px;
       }
       // &:checked {
       //   &::before {
@@ -270,7 +268,7 @@
       }
       &-head {
         cursor: pointer;
-        color: map-get($bc, 'dgray' );
+        color: map-get($bc, 'gray' );
         display: block;
         width: 100%;
         padding: 14px 10px;

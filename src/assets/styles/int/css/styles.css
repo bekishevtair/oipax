@@ -1186,9 +1186,6 @@ table {
     margin: 0 16px 0 0;
     transition: 0.2s;
   }
-  .box-border:hover .list-item::before {
-    background: url("../../../../public/img/icons/ico-check-dblue.svg") center no-repeat, #e5f9f9;
-  }
 }
 @media (min-width: 0) {
   .header {
@@ -1352,7 +1349,6 @@ table {
   }
   .nav__routes-item {
     width: 100%;
-    margin-bottom: 5px;
     padding: 12px 10px;
     text-decoration: none;
     color: #909A9A;
@@ -1367,7 +1363,6 @@ table {
     width: 100%;
     background: inherit;
     position: relative;
-    padding-left: 34px;
   }
   .nav__exp::after, .nav__exp::before {
     content: "";
@@ -1380,11 +1375,11 @@ table {
   }
   .nav__exp::before {
     transform: rotate(40deg);
-    left: 10px;
+    right: 16px;
   }
   .nav__exp::after {
     transform: rotate(-40deg);
-    left: 16px;
+    right: 10px;
   }
   .nav__exp input {
     display: none;
@@ -1404,7 +1399,7 @@ table {
   }
   .nav__exp-head {
     cursor: pointer;
-    color: #6B7272;
+    color: #909A9A;
     display: block;
     width: 100%;
     padding: 14px 10px;
@@ -2516,9 +2511,9 @@ table {
   .img-hp-yellow-green {
     position: relative;
     border-radius: 20px;
-    max-height: 100%;
+    max-height: 110%;
     width: 100%;
-    background: url("../../../../public/img/ui/img-hp-yellow-green.png") 50% 50%/105% auto no-repeat;
+    background: url("../../../../public/img/ui/img-hp-yellow-green.png") 40% 50%/120% auto no-repeat;
   }
   .img-hp-yellow-green img {
     position: absolute;
@@ -2637,9 +2632,9 @@ table {
   }
   .box-bg-1woman-acc {
     position: relative;
-    background: url("../../../../../public/img/ui/img-accounts-s1.png") 15% 50%/auto 105% no-repeat;
+    background: url("../../../../public/img/ui/img-accounts-s1.png") 15% 50%/auto 105% no-repeat;
   }
-  .box-border {
+  .box-border, .box-border-2 {
     position: relative;
     min-height: 272px;
     margin-bottom: 20px;
@@ -2648,26 +2643,13 @@ table {
     border: 2px solid #c5cbcb;
     transition: all ease-in-out 0.2s;
   }
-  .box-border:last-child {
+  .box-border:last-child, .box-border-2:last-child {
     margin-bottom: 0px;
   }
-  .box-border:hover {
-    background: #3a9689;
-    border: 2px solid #3a9689;
-  }
-  .box-border:hover .txt, .box-border:hover .tit {
-    color: #FFFFFF !important;
-    transition: all ease-in-out 0.1s;
-  }
-  .box-border:hover a::after {
-    background: #FFFFFF;
-    -webkit-mask: url("../../../../public/img/icons/ico-arrow-right.svg") center no-repeat;
-    mask: url("../../../../public/img/icons/ico-arrow-right.svg") center no-repeat;
-  }
-  .box-border:hover a:hover {
+  .box-border:hover a:hover, .box-border-2:hover a:hover {
     transform: scale(1.05);
   }
-  .box-border a {
+  .box-border a, .box-border-2 a {
     padding: 0 40px 0 0;
     position: relative;
     text-decoration: none;
@@ -2675,7 +2657,7 @@ table {
     font-weight: 500;
     transition: 0.2s;
   }
-  .box-border a::after {
+  .box-border a::after, .box-border-2 a::after {
     position: absolute;
     right: 0;
     top: 3px;
@@ -2685,12 +2667,20 @@ table {
     width: 24px;
     background: url("../../../../public/img/icons/ico-arrow-right.svg") center no-repeat;
   }
-  .box-border-2 {
+  .box-border-2, .box-border-2-2 {
     min-height: 182px;
     margin-bottom: 20px;
     padding: 30px;
     border-radius: 20px;
     border: 2px solid #c5cbcb;
+    transition: all ease-in-out 0.2s;
+  }
+  .box-border-2:hover, .box-border-2-2:hover {
+    border: 2px solid #78cdc5;
+    box-shadow: 0px 0px 0px 2px #78cdc5;
+  }
+  .box-border-2:last-child, .box-border-2-2:last-child {
+    margin-bottom: 0px;
   }
   .box-notification {
     padding: 20px 0;

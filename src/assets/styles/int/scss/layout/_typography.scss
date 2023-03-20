@@ -63,16 +63,6 @@
 
     }
   }
-  .box-border:hover {
-    .list-item {
-      &::before {
-        background: 
-          url('../../../../public/img/icons/ico-check-dblue.svg') center no-repeat,
-          map-get($bc, 'light' );
-
-      }
-    }
-  }
 }
 @media (min-width: $s-sm) {}
 @media (min-width: $s-md) {}
