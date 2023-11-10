@@ -6,12 +6,12 @@
     width: 100%;
     max-width: 100%;
     padding: 12px;
-    border: 0 solid rgba(0,0,0,0);
+    border: 0 solid rgba(0, 0, 0, 0);
     border-radius: 40px;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     outline: none;
     box-shadow: none;
     cursor: pointer;
@@ -22,7 +22,15 @@
     &-white {
       background: transparent;
       &:hover {
-        background: lighten(map-get($bc, 'dgray' ), 46%);
+        background: lighten(map-get($bc, 'dgray'), 46%);
+      }
+    }
+    &-yellow {
+      background: map-get($bc, 'yellow');
+      color: $w;
+      &:hover {
+        color: $w;
+        background: darken(map-get($bc, 'yellow'), 10%);
       }
     }
     &-aqua {
@@ -36,19 +44,19 @@
     &-daqua {
       background: darken(map-get($bc, 'aqua'), 14%);
       &:hover {
-        background: map-get($bc, 'yellow' );
+        background: map-get($bc, 'aqua');
       }
     }
     &-laqua {
       background: lighten(map-get($bc, 'aqua'), 26%);
       color: darken(map-get($bc, 'aqua'), 6%);
       &:hover {
-        background: map-get($bc, 'aqua' );
+        background: map-get($bc, 'aqua');
         color: $w;
       }
     }
     &-dblue {
-      background: map-get($bc, 'dblue' );
+      background: map-get($bc, 'dblue');
       color: $w;
       &:hover {
         background: lighten(map-get($bc, 'aqua'), 26%);
@@ -58,19 +66,19 @@
       justify-content: start;
       width: max-content;
       padding-right: 54px;
-      margin:6px 26px 6px 0;
+      margin: 6px 26px 6px 0;
       border-radius: 6px;
-      background: lighten(map-get($bc, 'dgray' ), 44%);
-      color: map-get($bc, 'dgray' );
+      background: lighten(map-get($bc, 'dgray'), 44%);
+      color: map-get($bc, 'dgray');
       &:hover {
         transform: scale(1.05);
-        background: lighten(map-get($bc, 'dgray' ), 36%);
-        color: map-get($bc, 'dblue' );
+        background: lighten(map-get($bc, 'dgray'), 36%);
+        color: map-get($bc, 'dblue');
         // box-shadow: 0px 10px 14px 4px rgba($b, .1);
 
         span {
           &::after {
-            background: map-get($bc, 'dblue' );
+            background: map-get($bc, 'dblue');
             transform: translateX(4px);
           }
         }
@@ -78,7 +86,7 @@
       span {
         position: relative;
         &::after {
-          transition: all ease-in-out .1s;
+          transition: all ease-in-out 0.1s;
           content: '';
           position: absolute;
           top: -4px;
@@ -86,8 +94,10 @@
           height: 24px;
           width: 24px;
           background: map-get($bc, 'dgray');
-          -webkit-mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
-          mask: url('../../../../public/img/icons/ico-arrow-right.svg') center no-repeat;
+          -webkit-mask: url('../../../../public/img/icons/ico-arrow-right.svg')
+            center no-repeat;
+          mask: url('../../../../public/img/icons/ico-arrow-right.svg') center
+            no-repeat;
         }
       }
     }
@@ -98,7 +108,7 @@
         color: lighten(map-get($bc, 'aqua'), 26%);
         &:hover {
           border: 2px solid map-get($bc, 'aqua');
-          background: map-get($bc, 'aqua' );
+          background: map-get($bc, 'aqua');
           color: $w;
         }
       }
@@ -110,18 +120,16 @@
       width: 60px;
       height: 60px;
       transform: rotate(270deg);
-      box-shadow: -10px 0px 24px 20px rgba($b, .1);
-      background:
-        map-get($bc, 'white' )
+      box-shadow: -10px 0px 24px 20px rgba($b, 0.1);
+      background: map-get($bc, 'white')
         url('../../../../public/img/icons/ico-arrow-up.svg') center no-repeat;
       border-radius: 50%;
       // opacity: 0;
       // pointer-events: none;
-      transition: .2s all ease-in-out;
+      transition: 0.2s all ease-in-out;
       &:hover {
         transform: scale(1.2) rotate(270deg);
-        background: 
-          lighten(map-get($bc, 'gray' ), 34%)
+        background: lighten(map-get($bc, 'gray'), 34%)
           url('../../../../public/img/icons/ico-arrow-up.svg') center no-repeat;
       }
       &.active-arrow {
@@ -138,10 +146,24 @@
   }
 }
 $btn-scales-options: (
-  s1: (ts: 12px, pd: 10px), // ts - text size; pd - padding
-  s2: (ts: 14px, pd: 12px),
-  s3: (ts: 16px, pd: 14px),
-  s4: (ts: 18px, pd: 16px)
+  s1: (
+    ts: 12px,
+    pd: 10px,
+  ),
+  // ts - text size; pd - padding
+  s2:
+    (
+      ts: 14px,
+      pd: 12px,
+    ),
+  s3: (
+    ts: 16px,
+    pd: 14px,
+  ),
+  s4: (
+    ts: 18px,
+    pd: 16px,
+  ),
 );
 @include BTNSCALE($btn-scales-options);
 @include BTNWIDTH(80, 320);

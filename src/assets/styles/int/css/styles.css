@@ -1142,22 +1142,64 @@ table {
   }
 }
 @media (min-width: 0) {
-  .txt, .tit, p, a, b, i, li, ol, ul, h1, h2, h3, h4, h5, h6, span, label, input, textarea, button {
+  .txt,
+.tit,
+p,
+b,
+i,
+a,
+li,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+input,
+textarea,
+button {
     font-family: "Avenir", sans-serif;
   }
-  html[lang=vi] body .tit, html[lang=vi] body .txt, html[lang=vi] body .src {
+  p,
+b,
+li,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: default;
+  }
+  html[lang=vi] body .tit,
+html[lang=vi] body .txt,
+html[lang=vi] body .src {
     font-family: "Inter", sans-serif;
   }
-  .tit.lh-1, .txt.lh-1, .src.lh-1 {
+  .tit.lh-1,
+.txt.lh-1,
+.src.lh-1 {
     line-height: 1.25;
   }
-  .tit.lh-2, .txt.lh-2, .src.lh-2 {
+  .tit.lh-2,
+.txt.lh-2,
+.src.lh-2 {
     line-height: 1.75;
   }
-  .tit.tf-inter, .txt.tf-inter, .src.tf-inter {
+  .tit.tf-inter,
+.txt.tf-inter,
+.src.tf-inter {
     font-family: "Inter", sans-serif;
   }
-  .tit.tf-ibmplexsans, .txt.tf-ibmplexsans, .src.tf-ibmplexsans {
+  .tit.tf-ibmplexsans,
+.txt.tf-ibmplexsans,
+.src.tf-ibmplexsans {
     font-family: "IBMPlexSans", sans-serif;
   }
   .tit {
@@ -1765,6 +1807,14 @@ table {
   .btn-white:hover {
     background: #e3e5e5;
   }
+  .btn-yellow {
+    background: #f5be43;
+    color: #FFFFFF;
+  }
+  .btn-yellow:hover {
+    color: #FFFFFF;
+    background: #f2ad13;
+  }
   .btn-aqua {
     background: #3a9689;
     color: #FFFFFF;
@@ -1777,7 +1827,7 @@ table {
     background: #26635a;
   }
   .btn-daqua:hover {
-    background: #f5be43;
+    background: #3a9689;
   }
   .btn-laqua {
     background: #85d0c5;
@@ -2289,6 +2339,9 @@ table {
   .view--instruments .section-1 {
     margin: 30px 0 100px;
   }
+  .view--instruments .section-2 {
+    margin-bottom: 60px;
+  }
   .view--instruments .section-4 {
     margin-bottom: 60px;
   }
@@ -2423,6 +2476,9 @@ table {
   }
   .view--instruments .section-1 {
     margin: 30px 0px 100px 0;
+  }
+  .view--instruments .section-2 {
+    margin-bottom: 100px;
   }
   .view--instruments .section-3 {
     margin-bottom: 100px;
@@ -2584,10 +2640,11 @@ table {
 @media (min-width: 0) {
   .wrapper {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
   }
   .box-bg {
     min-height: 240px;
+    max-height: 240px;
   }
   .box-bg-right-side-rounded {
     border-radius: 0 20px 20px 0;
@@ -2616,6 +2673,23 @@ table {
   .box-bg-4ppl {
     background: url("../../../../public/img/ui/img-bg-4ppl.png") 92% 0% no-repeat, url("../../../../public/img/ui/img-instr-bg-green.png") 92% 0% no-repeat;
   }
+  .box-bg-forex {
+    background: url("../../../../public/img/ui/img-bg-forex-s1.png") 92% 0% no-repeat;
+  }
+  .box-bg-indices {
+    background: url("../../../../public/img/ui/img-bg-indices-s1.png") 12% 0% no-repeat;
+  }
+  .box-bg-crypto {
+    background: url("../../../../public/img/ui/img-bg-crypto-s1.png") 12% 0% no-repeat;
+  }
+  .box-bg-platform-webtrader {
+    position: relative;
+    background: url("../../../../public/img/ui/img-bg-platform.png") 50% 0% no-repeat;
+  }
+  .box-bg-platform-webtrader .img-platform-1woman {
+    bottom: 0;
+    position: absolute;
+  }
   .box-bg-phone {
     background: url("../../../../public/img/ui/img-hp-2ppl.png") 1% 0% no-repeat, url("../../../../public/img/ui/img-hp-bg-phone.png") no-repeat;
   }
@@ -2636,7 +2710,6 @@ table {
   }
   .box-border, .box-border-2 {
     position: relative;
-    min-height: 272px;
     margin-bottom: 20px;
     padding: 30px;
     border-radius: 20px;
@@ -2647,7 +2720,10 @@ table {
     margin-bottom: 0px;
   }
   .box-border:hover a:hover, .box-border-2:hover a:hover {
-    transform: scale(1.05);
+    transition: 0.2s all ease-in-out;
+  }
+  .box-border:hover a:hover::after, .box-border-2:hover a:hover::after {
+    transform: translateX(4px);
   }
   .box-border a, .box-border-2 a {
     padding: 0 40px 0 0;
@@ -2665,6 +2741,7 @@ table {
     display: block;
     height: 24px;
     width: 24px;
+    transition: 0.2s all ease-in-out;
     background: url("../../../../public/img/icons/ico-arrow-right.svg") center no-repeat;
   }
   .box-border-2, .box-border-2-2 {
