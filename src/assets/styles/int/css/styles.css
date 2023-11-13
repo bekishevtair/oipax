@@ -2653,7 +2653,16 @@ html[lang=vi] body .src {
     border-radius: 20px 0px 0px 20px;
   }
   .box-bg-arrows {
-    background: url("../../../../public/img/ui/img-hp-bg-arrows.png"), url("../../../../public/img/ui/img-hp-1man.png") 50% 100% no-repeat, radial-gradient(circle, #82C9C0, #3F8D7F);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../../../public/img/ui/img-hp-bg-bonus.png"), url("../../../../public/img/ui/img-hp-1man.png") 50% 100% no-repeat, radial-gradient(circle, #82C9C0, #3F8D7F);
+  }
+  .box-bg-arrows p {
+    background: #ffd400;
+    display: inline-block;
+    padding: 4px 30px;
   }
   .box-bg-arrows-instruments {
     min-height: 240px;
@@ -2771,7 +2780,7 @@ html[lang=vi] body .src {
 }
 @media (min-width: 768px) {
   .box-bg-arrows {
-    background: url("../../../../public/img/ui/img-hp-bg-arrows.png"), url("../../../../public/img/ui/img-hp-1man.png") 100% 100% no-repeat, url("../../../../public/img/ui/img-hp-3barrels.png") 5% 0% no-repeat, radial-gradient(circle, #82C9C0, #3F8D7F);
+    background: url("../../../../public/img/ui/img-hp-bg-bonus.png"), url("../../../../public/img/ui/img-hp-1man.png") 100% 100% no-repeat, url("../../../../public/img/ui/img-hp-3barrels.png") 5% 0% no-repeat, radial-gradient(circle, #82C9C0, #3F8D7F);
   }
   .box-bg-arrows-instruments {
     background: url("../../../../public/img/ui/img-instruments-3barrels.png") 50% 0 no-repeat, url("../../../../public/img/ui/img-instruments-bg-arrows-coins.png") center no-repeat;
